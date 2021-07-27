@@ -1,0 +1,662 @@
+Starting empleado as root
+[2021-07-27 17:19:21 +0000] [44920] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/webapps/empleados/run/gunicorn.sock']
+  backlog: 2048
+  workers: 3
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /webapps/empleados/empleado
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: -
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: empleado
+  default_proc_name: empleado.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fc1c9593310>
+  on_reload: <function OnReload.on_reload at 0x7fc1c9593430>
+  when_ready: <function WhenReady.when_ready at 0x7fc1c9593550>
+  pre_fork: <function Prefork.pre_fork at 0x7fc1c9593670>
+  post_fork: <function Postfork.post_fork at 0x7fc1c9593790>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fc1c95938b0>
+  worker_int: <function WorkerInt.worker_int at 0x7fc1c95939d0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fc1c9593af0>
+  pre_exec: <function PreExec.pre_exec at 0x7fc1c9593c10>
+  pre_request: <function PreRequest.pre_request at 0x7fc1c9593d30>
+  post_request: <function PostRequest.post_request at 0x7fc1c9593dc0>
+  child_exit: <function ChildExit.child_exit at 0x7fc1c9593ee0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fc1c9528040>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fc1c9528160>
+  on_exit: <function OnExit.on_exit at 0x7fc1c9528280>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2021-07-27 17:19:21 +0000] [44920] [INFO] Starting gunicorn 20.1.0
+[2021-07-27 17:19:21 +0000] [44920] [DEBUG] Arbiter booted
+[2021-07-27 17:19:21 +0000] [44920] [INFO] Listening at: unix:/webapps/empleados/run/gunicorn.sock (44920)
+[2021-07-27 17:19:21 +0000] [44920] [INFO] Using worker: sync
+[2021-07-27 17:19:21 +0000] [44926] [INFO] Booting worker with pid: 44926
+[2021-07-27 17:19:21 +0000] [44927] [INFO] Booting worker with pid: 44927
+[2021-07-27 17:19:22 +0000] [44928] [INFO] Booting worker with pid: 44928
+[2021-07-27 17:19:22 +0000] [44920] [DEBUG] 3 workers
+[2021-07-27 17:38:40 +0000] [44928] [DEBUG] GET /
+Invalid HTTP_HOST header: '143.244.191.105'. You may need to add '143.244.191.105' to ALLOWED_HOSTS.
+Bad Request: /
+[2021-07-27 17:38:41 +0000] [44927] [DEBUG] GET /favicon.ico
+Invalid HTTP_HOST header: '143.244.191.105'. You may need to add '143.244.191.105' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[2021-07-27 17:39:49 +0000] [44920] [INFO] Handling signal: term
+[2021-07-27 17:39:49 +0000] [44926] [INFO] Worker exiting (pid: 44926)
+[2021-07-27 17:39:49 +0000] [44927] [INFO] Worker exiting (pid: 44927)
+[2021-07-27 17:39:49 +0000] [44928] [INFO] Worker exiting (pid: 44928)
+[2021-07-27 17:39:50 +0000] [44920] [INFO] Shutting down: Master
+Starting empleado as root
+[2021-07-27 17:39:50 +0000] [45104] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/webapps/empleados/run/gunicorn.sock']
+  backlog: 2048
+  workers: 3
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /webapps/empleados/empleado
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: -
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: empleado
+  default_proc_name: empleado.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f0eb1a3d310>
+  on_reload: <function OnReload.on_reload at 0x7f0eb1a3d430>
+  when_ready: <function WhenReady.when_ready at 0x7f0eb1a3d550>
+  pre_fork: <function Prefork.pre_fork at 0x7f0eb1a3d670>
+  post_fork: <function Postfork.post_fork at 0x7f0eb1a3d790>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f0eb1a3d8b0>
+  worker_int: <function WorkerInt.worker_int at 0x7f0eb1a3d9d0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f0eb1a3daf0>
+  pre_exec: <function PreExec.pre_exec at 0x7f0eb1a3dc10>
+  pre_request: <function PreRequest.pre_request at 0x7f0eb1a3dd30>
+  post_request: <function PostRequest.post_request at 0x7f0eb1a3ddc0>
+  child_exit: <function ChildExit.child_exit at 0x7f0eb1a3dee0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f0eb19d3040>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f0eb19d3160>
+  on_exit: <function OnExit.on_exit at 0x7f0eb19d3280>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2021-07-27 17:39:50 +0000] [45104] [INFO] Starting gunicorn 20.1.0
+[2021-07-27 17:39:50 +0000] [45104] [DEBUG] Arbiter booted
+[2021-07-27 17:39:50 +0000] [45104] [INFO] Listening at: unix:/webapps/empleados/run/gunicorn.sock (45104)
+[2021-07-27 17:39:50 +0000] [45104] [INFO] Using worker: sync
+[2021-07-27 17:39:50 +0000] [45108] [INFO] Booting worker with pid: 45108
+[2021-07-27 17:39:50 +0000] [45109] [INFO] Booting worker with pid: 45109
+[2021-07-27 17:39:50 +0000] [45110] [INFO] Booting worker with pid: 45110
+[2021-07-27 17:39:50 +0000] [45104] [DEBUG] 3 workers
+[2021-07-27 17:45:57 +0000] [45110] [DEBUG] GET /
+Invalid HTTP_HOST header: '143.244.191.105'. You may need to add '143.244.191.105' to ALLOWED_HOSTS.
+Bad Request: /
+[2021-07-27 17:45:57 +0000] [45109] [DEBUG] GET /favicon.ico
+Invalid HTTP_HOST header: '143.244.191.105'. You may need to add '143.244.191.105' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[2021-07-27 17:50:15 +0000] [45109] [DEBUG] GET /
+Invalid HTTP_HOST header: '143.244.191.105'. You may need to add '143.244.191.105' to ALLOWED_HOSTS.
+Bad Request: /
+[2021-07-27 17:50:15 +0000] [45110] [DEBUG] GET /favicon.ico
+Invalid HTTP_HOST header: '143.244.191.105'. You may need to add '143.244.191.105' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[2021-07-27 17:50:22 +0000] [45109] [DEBUG] GET /
+Invalid HTTP_HOST header: '143.244.191.105'. You may need to add '143.244.191.105' to ALLOWED_HOSTS.
+Bad Request: /
+[2021-07-27 17:50:23 +0000] [45108] [DEBUG] GET /favicon.ico
+Invalid HTTP_HOST header: '143.244.191.105'. You may need to add '143.244.191.105' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[2021-07-27 17:56:23 +0000] [45110] [DEBUG] GET /
+Invalid HTTP_HOST header: '143.244.191.105'. You may need to add '143.244.191.105' to ALLOWED_HOSTS.
+Bad Request: /
+[2021-07-27 17:56:24 +0000] [45108] [DEBUG] GET /favicon.ico
+Invalid HTTP_HOST header: '143.244.191.105'. You may need to add '143.244.191.105' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[2021-07-27 17:57:15 +0000] [45108] [DEBUG] GET /
+Invalid HTTP_HOST header: '143.244.191.105'. You may need to add '143.244.191.105' to ALLOWED_HOSTS.
+Bad Request: /
+[2021-07-27 17:57:15 +0000] [45110] [DEBUG] GET /favicon.ico
+Invalid HTTP_HOST header: '143.244.191.105'. You may need to add '143.244.191.105' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[2021-07-27 17:57:37 +0000] [45108] [DEBUG] GET /
+Invalid HTTP_HOST header: '143.244.191.105'. You may need to add '143.244.191.105' to ALLOWED_HOSTS.
+Bad Request: /
+[2021-07-27 17:57:38 +0000] [45109] [DEBUG] GET /favicon.ico
+Invalid HTTP_HOST header: '143.244.191.105'. You may need to add '143.244.191.105' to ALLOWED_HOSTS.
+Bad Request: /favicon.ico
+[2021-07-27 18:00:15 +0000] [45109] [DEBUG] GET /config/getuser
+Invalid HTTP_HOST header: '143.244.191.105:80'. You may need to add '143.244.191.105' to ALLOWED_HOSTS.
+Bad Request: /config/getuser
+[2021-07-27 18:02:45 +0000] [45108] [DEBUG] GET /phpmyadmin4/index.php
+Invalid HTTP_HOST header: '143.244.191.105'. You may need to add '143.244.191.105' to ALLOWED_HOSTS.
+Bad Request: /phpmyadmin4/index.php
+[2021-07-27 18:02:46 +0000] [45110] [DEBUG] GET /mysql/web/index.php
+Invalid HTTP_HOST header: '143.244.191.105'. You may need to add '143.244.191.105' to ALLOWED_HOSTS.
+Bad Request: /mysql/web/index.php
+[2021-07-27 18:02:46 +0000] [45109] [DEBUG] GET /pma2019/index.php
+Invalid HTTP_HOST header: '143.244.191.105'. You may need to add '143.244.191.105' to ALLOWED_HOSTS.
+Bad Request: /pma2019/index.php
+[2021-07-27 18:02:47 +0000] [45110] [DEBUG] GET /pma2014/index.php
+Invalid HTTP_HOST header: '143.244.191.105'. You may need to add '143.244.191.105' to ALLOWED_HOSTS.
+Bad Request: /pma2014/index.php
+[2021-07-27 18:02:47 +0000] [45109] [DEBUG] GET /admin/sqladmin/index.php
+Invalid HTTP_HOST header: '143.244.191.105'. You may need to add '143.244.191.105' to ALLOWED_HOSTS.
+Bad Request: /admin/sqladmin/index.php
+[2021-07-27 18:02:48 +0000] [45110] [DEBUG] GET /pma2013/index.php
+Invalid HTTP_HOST header: '143.244.191.105'. You may need to add '143.244.191.105' to ALLOWED_HOSTS.
+Bad Request: /pma2013/index.php
+[2021-07-27 18:02:48 +0000] [45109] [DEBUG] GET /phpmyadmin2020/index.php
+Invalid HTTP_HOST header: '143.244.191.105'. You may need to add '143.244.191.105' to ALLOWED_HOSTS.
+Bad Request: /phpmyadmin2020/index.php
+[2021-07-27 18:02:49 +0000] [45110] [DEBUG] GET /phpMyAdmin4/index.php
+Invalid HTTP_HOST header: '143.244.191.105'. You may need to add '143.244.191.105' to ALLOWED_HOSTS.
+Bad Request: /phpMyAdmin4/index.php
+[2021-07-27 18:02:50 +0000] [45109] [DEBUG] GET /phpMyAdmin4/index.php
+Invalid HTTP_HOST header: '143.244.191.105'. You may need to add '143.244.191.105' to ALLOWED_HOSTS.
+Bad Request: /phpMyAdmin4/index.php
+[2021-07-27 18:07:42 +0000] [45104] [INFO] Handling signal: term
+[2021-07-27 18:07:42 +0000] [45108] [INFO] Worker exiting (pid: 45108)
+[2021-07-27 18:07:42 +0000] [45109] [INFO] Worker exiting (pid: 45109)
+[2021-07-27 18:07:42 +0000] [45110] [INFO] Worker exiting (pid: 45110)
+[2021-07-27 18:07:43 +0000] [45104] [INFO] Shutting down: Master
+Starting empleado as root
+[2021-07-27 18:07:43 +0000] [45465] [DEBUG] Current configuration:
+  config: ./gunicorn.conf.py
+  wsgi_app: None
+  bind: ['unix:/webapps/empleados/run/gunicorn.sock']
+  backlog: 2048
+  workers: 3
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  print_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /webapps/empleados/empleado
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: -
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: empleado
+  default_proc_name: empleado.wsgi:application
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fdc962bd310>
+  on_reload: <function OnReload.on_reload at 0x7fdc962bd430>
+  when_ready: <function WhenReady.when_ready at 0x7fdc962bd550>
+  pre_fork: <function Prefork.pre_fork at 0x7fdc962bd670>
+  post_fork: <function Postfork.post_fork at 0x7fdc962bd790>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fdc962bd8b0>
+  worker_int: <function WorkerInt.worker_int at 0x7fdc962bd9d0>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fdc962bdaf0>
+  pre_exec: <function PreExec.pre_exec at 0x7fdc962bdc10>
+  pre_request: <function PreRequest.pre_request at 0x7fdc962bdd30>
+  post_request: <function PostRequest.post_request at 0x7fdc962bddc0>
+  child_exit: <function ChildExit.child_exit at 0x7fdc962bdee0>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fdc96253040>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fdc96253160>
+  on_exit: <function OnExit.on_exit at 0x7fdc96253280>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2021-07-27 18:07:43 +0000] [45465] [INFO] Starting gunicorn 20.1.0
+[2021-07-27 18:07:43 +0000] [45465] [DEBUG] Arbiter booted
+[2021-07-27 18:07:43 +0000] [45465] [INFO] Listening at: unix:/webapps/empleados/run/gunicorn.sock (45465)
+[2021-07-27 18:07:43 +0000] [45465] [INFO] Using worker: sync
+[2021-07-27 18:07:43 +0000] [45469] [INFO] Booting worker with pid: 45469
+[2021-07-27 18:07:43 +0000] [45470] [INFO] Booting worker with pid: 45470
+[2021-07-27 18:07:43 +0000] [45471] [INFO] Booting worker with pid: 45471
+[2021-07-27 18:07:43 +0000] [45465] [DEBUG] 3 workers
+[2021-07-27 18:07:52 +0000] [45470] [DEBUG] GET /
+[2021-07-27 18:07:53 +0000] [45471] [DEBUG] GET /favicon.ico
+Not Found: /favicon.ico
+[2021-07-27 18:07:57 +0000] [45470] [DEBUG] GET /listar-todo-empleados/
+Internal Server Error: /listar-todo-empleados/
+Traceback (most recent call last):
+  File "/webapps/empleados/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedTable: relation "persona_empleado" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "persona_empleado" WHERE U...
+                                          ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/webapps/empleados/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/webapps/empleados/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/webapps/empleados/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/webapps/empleados/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/webapps/empleados/lib/python3.8/site-packages/django/views/generic/list.py", line 157, in get
+    context = self.get_context_data()
+  File "/webapps/empleados/lib/python3.8/site-packages/django/views/generic/list.py", line 119, in get_context_data
+    paginator, page, queryset, is_paginated = self.paginate_queryset(queryset, page_size)
+  File "/webapps/empleados/lib/python3.8/site-packages/django/views/generic/list.py", line 69, in paginate_queryset
+    page = paginator.page(page_number)
+  File "/webapps/empleados/lib/python3.8/site-packages/django/core/paginator.py", line 76, in page
+    number = self.validate_number(number)
+  File "/webapps/empleados/lib/python3.8/site-packages/django/core/paginator.py", line 54, in validate_number
+    if number > self.num_pages:
+  File "/webapps/empleados/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/webapps/empleados/lib/python3.8/site-packages/django/core/paginator.py", line 103, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+  File "/webapps/empleados/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/webapps/empleados/lib/python3.8/site-packages/django/core/paginator.py", line 97, in count
+    return c()
+  File "/webapps/empleados/lib/python3.8/site-packages/django/db/models/query.py", line 412, in count
+    return self.query.get_count(using=self.db)
+  File "/webapps/empleados/lib/python3.8/site-packages/django/db/models/sql/query.py", line 519, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "/webapps/empleados/lib/python3.8/site-packages/django/db/models/sql/query.py", line 504, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/webapps/empleados/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/webapps/empleados/lib/python3.8/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/webapps/empleados/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/webapps/empleados/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/webapps/empleados/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/webapps/empleados/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/webapps/empleados/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: relation "persona_empleado" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "persona_empleado" WHERE U...
+                                          ^
+
+[2021-07-27 18:08:01 +0000] [45471] [DEBUG] GET /departamento-lista/
+Internal Server Error: /departamento-lista/
+Traceback (most recent call last):
+  File "/webapps/empleados/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedTable: relation "departamento_departamento" does not exist
+LINE 1: ...name", "departamento_departamento"."anulate" FROM "departame...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/webapps/empleados/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/webapps/empleados/lib/python3.8/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    response = response.render()
+  File "/webapps/empleados/lib/python3.8/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/webapps/empleados/lib/python3.8/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/webapps/empleados/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/webapps/empleados/lib/python3.8/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/webapps/empleados/lib/python3.8/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/webapps/empleados/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/webapps/empleados/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/webapps/empleados/lib/python3.8/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/webapps/empleados/lib/python3.8/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/webapps/empleados/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/webapps/empleados/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/webapps/empleados/lib/python3.8/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/webapps/empleados/lib/python3.8/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/webapps/empleados/lib/python3.8/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/webapps/empleados/lib/python3.8/site-packages/django/template/defaulttags.py", line 168, in render
+    len_values = len(values)
+  File "/webapps/empleados/lib/python3.8/site-packages/django/db/models/query.py", line 262, in __len__
+    self._fetch_all()
+  File "/webapps/empleados/lib/python3.8/site-packages/django/db/models/query.py", line 1324, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/webapps/empleados/lib/python3.8/site-packages/django/db/models/query.py", line 51, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "/webapps/empleados/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/webapps/empleados/lib/python3.8/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/webapps/empleados/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/webapps/empleados/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/webapps/empleados/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/webapps/empleados/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/webapps/empleados/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: relation "departamento_departamento" does not exist
+LINE 1: ...name", "departamento_departamento"."anulate" FROM "departame...
+                                                             ^
+
+[2021-07-27 18:08:02 +0000] [45469] [DEBUG] GET /lista-empleados-admin/
+Internal Server Error: /lista-empleados-admin/
+Traceback (most recent call last):
+  File "/webapps/empleados/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedTable: relation "persona_empleado" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "persona_empleado"
+                                          ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/webapps/empleados/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/webapps/empleados/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/webapps/empleados/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/webapps/empleados/lib/python3.8/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/webapps/empleados/lib/python3.8/site-packages/django/views/generic/list.py", line 157, in get
+    context = self.get_context_data()
+  File "/webapps/empleados/lib/python3.8/site-packages/django/views/generic/list.py", line 119, in get_context_data
+    paginator, page, queryset, is_paginated = self.paginate_queryset(queryset, page_size)
+  File "/webapps/empleados/lib/python3.8/site-packages/django/views/generic/list.py", line 69, in paginate_queryset
+    page = paginator.page(page_number)
+  File "/webapps/empleados/lib/python3.8/site-packages/django/core/paginator.py", line 76, in page
+    number = self.validate_number(number)
+  File "/webapps/empleados/lib/python3.8/site-packages/django/core/paginator.py", line 54, in validate_number
+    if number > self.num_pages:
+  File "/webapps/empleados/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/webapps/empleados/lib/python3.8/site-packages/django/core/paginator.py", line 103, in num_pages
+    if self.count == 0 and not self.allow_empty_first_page:
+  File "/webapps/empleados/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/webapps/empleados/lib/python3.8/site-packages/django/core/paginator.py", line 97, in count
+    return c()
+  File "/webapps/empleados/lib/python3.8/site-packages/django/db/models/query.py", line 412, in count
+    return self.query.get_count(using=self.db)
+  File "/webapps/empleados/lib/python3.8/site-packages/django/db/models/sql/query.py", line 519, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "/webapps/empleados/lib/python3.8/site-packages/django/db/models/sql/query.py", line 504, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/webapps/empleados/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/webapps/empleados/lib/python3.8/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/webapps/empleados/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/webapps/empleados/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/webapps/empleados/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/webapps/empleados/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/webapps/empleados/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: relation "persona_empleado" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "persona_empleado"
+                                          ^
+
+[2021-07-27 18:08:04 +0000] [45471] [DEBUG] GET /new-departamento/
+[2021-07-27 18:13:35 +0000] [45471] [DEBUG] POST /boaform/admin/formLogin
+Not Found: /boaform/admin/formLogin
+[2021-07-27 18:24:11 +0000] [45471] [DEBUG] GET /admin
+[2021-07-27 18:24:11 +0000] [45469] [DEBUG] GET /admin/
+[2021-07-27 18:24:11 +0000] [45471] [DEBUG] GET /admin/login/
+[2021-07-27 18:24:18 +0000] [45469] [DEBUG] POST /admin/login/
+[2021-07-27 18:24:18 +0000] [45470] [DEBUG] GET /admin/
+[2021-07-27 18:40:44 +0000] [45470] [DEBUG] GET /admin/
+[2021-07-27 18:40:51 +0000] [45471] [DEBUG] GET /
+[2021-07-27 18:40:52 +0000] [45469] [DEBUG] GET /departamento-lista/
+[2021-07-27 18:40:56 +0000] [45471] [DEBUG] GET /listar-todo-empleados/
+[2021-07-27 18:40:58 +0000] [45469] [DEBUG] GET /lista-empleados-admin/
+[2021-07-27 18:40:59 +0000] [45471] [DEBUG] GET /new-departamento/
+[2021-07-27 18:41:01 +0000] [45469] [DEBUG] GET /listar-todo-empleados/
+[2021-07-27 18:41:02 +0000] [45470] [DEBUG] GET /departamento-lista/
+[2021-07-27 18:41:03 +0000] [45469] [DEBUG] GET /lista-empleados-admin/
+[2021-07-27 18:41:03 +0000] [45470] [DEBUG] GET /new-departamento/
+[2021-07-27 18:41:06 +0000] [45471] [DEBUG] GET /admin/
+[2021-07-27 18:41:09 +0000] [45469] [DEBUG] GET /admin/persona/empleado/
+[2021-07-27 18:41:09 +0000] [45471] [DEBUG] GET /admin/jsi18n/
+[2021-07-27 18:41:44 +0000] [45471] [DEBUG] GET /admin/persona/empleado/
+[2021-07-27 18:41:44 +0000] [45469] [DEBUG] GET /admin/jsi18n/
+[2021-07-27 18:41:45 +0000] [45471] [DEBUG] GET /admin/persona/empleado/add/
+[2021-07-27 18:41:46 +0000] [45469] [DEBUG] GET /admin/jsi18n/
+[2021-07-27 18:42:05 +0000] [45470] [DEBUG] GET /admin/departamento/departamento/add/
+[2021-07-27 18:42:06 +0000] [45469] [DEBUG] GET /admin/jsi18n/
+[2021-07-27 18:42:22 +0000] [45471] [DEBUG] POST /admin/departamento/departamento/add/
+[2021-07-27 18:42:50 +0000] [45469] [DEBUG] POST /admin/persona/empleado/add/
+[2021-07-27 18:42:50 +0000] [45471] [DEBUG] GET /admin/jsi18n/
+[2021-07-27 18:43:06 +0000] [45469] [DEBUG] GET /admin/persona/habilidades/
+[2021-07-27 18:43:06 +0000] [45470] [DEBUG] GET /admin/jsi18n/
+[2021-07-27 18:43:08 +0000] [45469] [DEBUG] GET /admin/persona/habilidades/add/
+[2021-07-27 18:43:08 +0000] [45470] [DEBUG] GET /admin/jsi18n/
+[2021-07-27 18:43:16 +0000] [45469] [DEBUG] POST /admin/persona/habilidades/add/
+[2021-07-27 18:43:16 +0000] [45470] [DEBUG] GET /admin/persona/habilidades/
+[2021-07-27 18:43:17 +0000] [45469] [DEBUG] GET /admin/jsi18n/
+[2021-07-27 18:43:19 +0000] [45470] [DEBUG] GET /admin/persona/habilidades/add/
+[2021-07-27 18:43:19 +0000] [45469] [DEBUG] GET /admin/jsi18n/
+[2021-07-27 18:43:25 +0000] [45470] [DEBUG] POST /admin/persona/habilidades/add/
+[2021-07-27 18:43:25 +0000] [45471] [DEBUG] GET /admin/persona/habilidades/
+[2021-07-27 18:43:26 +0000] [45470] [DEBUG] GET /admin/jsi18n/
+[2021-07-27 18:43:28 +0000] [45471] [DEBUG] GET /admin/persona/habilidades/add/
+[2021-07-27 18:43:28 +0000] [45470] [DEBUG] GET /admin/jsi18n/
+[2021-07-27 18:43:41 +0000] [45471] [DEBUG] POST /admin/persona/habilidades/add/
+[2021-07-27 18:43:41 +0000] [45469] [DEBUG] GET /admin/persona/habilidades/
+[2021-07-27 18:43:41 +0000] [45471] [DEBUG] GET /admin/jsi18n/
+[2021-07-27 18:43:42 +0000] [45469] [DEBUG] GET /admin/persona/empleado/
+[2021-07-27 18:43:42 +0000] [45471] [DEBUG] GET /admin/jsi18n/
+[2021-07-27 18:43:44 +0000] [45469] [DEBUG] GET /admin/persona/empleado/add/
+[2021-07-27 18:43:44 +0000] [45470] [DEBUG] GET /admin/jsi18n/
+[2021-07-27 18:44:00 +0000] [45469] [DEBUG] POST /admin/persona/empleado/add/
+[2021-07-27 18:44:01 +0000] [45470] [DEBUG] GET /admin/persona/empleado/
+[2021-07-27 18:44:01 +0000] [45469] [DEBUG] GET /admin/jsi18n/
+[2021-07-27 18:44:04 +0000] [45470] [DEBUG] GET /
+[2021-07-27 18:44:05 +0000] [45471] [DEBUG] GET /listar-todo-empleados/
+[2021-07-27 18:44:09 +0000] [45470] [DEBUG] GET /departamento-lista/
+[2021-07-27 18:44:10 +0000] [45471] [DEBUG] GET /lista-empleados-admin/
+[2021-07-27 18:44:12 +0000] [45470] [DEBUG] GET /new-departamento/
+[2021-07-27 18:44:14 +0000] [45471] [DEBUG] GET /listar-todo-empleados/
+[2021-07-27 18:44:40 +0000] [45470] [DEBUG] GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2021-07-27 18:44:40 +0000] [45471] [DEBUG] POST /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2021-07-27 18:44:41 +0000] [45469] [DEBUG] POST /api/jsonws/invoke
+[2021-07-27 18:44:41 +0000] [45470] [DEBUG] GET /console/
+Not Found: /api/jsonws/invoke
+Not Found: /console/
+[2021-07-27 18:44:41 +0000] [45471] [DEBUG] GET /index.php
+[2021-07-27 18:44:41 +0000] [45469] [DEBUG] GET /
+Not Found: /index.php
+[2021-07-27 18:44:41 +0000] [45469] [DEBUG] POST /Autodiscover/Autodiscover.xml
+Not Found: /Autodiscover/Autodiscover.xml
+[2021-07-27 18:44:42 +0000] [45471] [DEBUG] GET /wp-content/plugins/wp-file-manager/readme.txt
+Not Found: /wp-content/plugins/wp-file-manager/readme.txt
+[2021-07-27 18:44:42 +0000] [45469] [DEBUG] GET /solr/admin/info/system
+Not Found: /solr/admin/info/system
+[2021-07-27 18:44:43 +0000] [45471] [DEBUG] GET /_ignition/execute-solution
+Not Found: /_ignition/execute-solution
+[2021-07-27 18:44:43 +0000] [45469] [DEBUG] GET /
+[2021-07-27 18:47:37 +0000] [45469] [DEBUG] GET /
+[2021-07-27 18:54:13 +0000] [45470] [DEBUG] GET /listar-todo-empleados/
+[2021-07-27 18:54:16 +0000] [45469] [DEBUG] GET /listar-todo-empleados/
+[2021-07-27 18:54:17 +0000] [45471] [DEBUG] GET /departamento-lista/
+[2021-07-27 18:54:18 +0000] [45469] [DEBUG] GET /lista-empleados-admin/
+[2021-07-27 18:54:19 +0000] [45471] [DEBUG] GET /new-departamento/
+[2021-07-27 18:57:13 +0000] [45471] [DEBUG] GET /new-departamento/
+[2021-07-27 18:57:14 +0000] [45469] [DEBUG] GET /departamento-lista/
+[2021-07-27 18:57:15 +0000] [45470] [DEBUG] GET /listar-todo-empleados/
+[2021-07-27 18:57:16 +0000] [45469] [DEBUG] GET /new-departamento/
+[2021-07-27 18:57:47 +0000] [45469] [DEBUG] GET /
+[2021-07-27 18:57:50 +0000] [45470] [DEBUG] GET /favicon.ico
+Not Found: /favicon.ico
+[2021-07-27 18:57:54 +0000] [45469] [DEBUG] GET /listar-todo-empleados/
+[2021-07-27 18:57:58 +0000] [45470] [DEBUG] GET /ver-empleado/1/
